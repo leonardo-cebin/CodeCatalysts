@@ -1,3 +1,5 @@
+//////////////////////////////// QUAISQUER MUDANÇAS NO PITCH DEVEM SER REGISTRADAS E NÃO SOBRESCREVER O ORIGINAL /////////////////////////
+
 Module 1. Simulação Básica de Trocador de Calor com Controle de Temperatura de Saída
 
             Objetivo: Permitir que o usuário ajuste a vazão de entrada e a temperatura de dois fluidos em um trocador de calor e visualize a temperatura de saida.
