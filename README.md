@@ -9,3 +9,13 @@
   <li>Testers</li>
   <li>Desenvolvedores</li>
 </ul>
+
+<h2>Pontuações</h2>
+<ul>
+  <li>Software que executa a solução do projeto: até 4 pontos</li>
+<li>Software que aplica IA Generativa na solução: até 2 pontos adicionais</li>
+<li>Vídeo de entrega (sales pitch) da solução criada com até 2 minutos de duração: até 2
+pontos</li>
+<li>Documento técnico com listagem de bugs e problemas: até 1 ponto</li>
+<li>Documento com Lições aprendidas do grupo: até 1 ponto</li>
+</ul>
