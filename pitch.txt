@@ -10,8 +10,8 @@ Module 1. Simulação Básica de Trocador de Calor com Controle de Temperatura d
 Module 2. Simulação de Seleção de Bombas com NPSH e Altura Manométrica
 
             Objetivo: Criar um simulador que ajuda o usuario a determinar o tipo de bomba adequado para um sistema de bombeamento, com base em variáveis simples.
-            Descrição: O software permite que o usuário insira a altura manométrica, a vazão desejada e a altura de suco. A partir disso, o programa calcula o NPSH (Net Positive Suction Head) e sugere tipos de bomba que atenderiam ao sistema.
-            Variáveis: Altura manométrica, vazão, altura de suco, pressão atmosférica.
+            Descrição: O software permite que o usuário insira a altura manométrica, a vazão desejada e a altura de sucção. A partir disso, o programa calcula o NPSH (Net Positive Suction Head) e sugere tipos de bomba que atenderiam ao sistema.
+            Variáveis: Altura manométrica, vazão, altura de sucção, pressão atmosférica.
             Benefício: Uma prática simples e prática, familiar para sistemas de bombeamento em geral.
 
 Module 3. Simulação de Controle de Pressão (Perda de carga) em Sistema de Tubulação
