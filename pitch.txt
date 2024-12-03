@@ -20,3 +20,8 @@ Module 3. Simulação de Controle de Pressão (Perda de carga) em Sistema de Tub
             Descrição: O usuário pode simular um sistema de tubulação e alterar a pressão em diferentes fases ajustando válvulas de restrição. O software pode calcular quedas de pressão (perda de carga) aproximadas e exibir o fluxo em cada seção.
             Variáveis: Pressão inicial, comprimento da tubulação, velocidade, viscosidade, densidade.
             Benefício:  útil para introduzir o conceito de controle de pressão, algo comum em si.
+
+
+
+
+# Alteração 1: Inverti o 1° com o 2°, para refletir a mudança de prioridades em que trabalharemos os módulos
