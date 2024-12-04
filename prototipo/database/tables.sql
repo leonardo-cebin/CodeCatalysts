@@ -10,6 +10,7 @@ CREATE TABLE `pumps` (
     `TempMin`	FLOAT,
     `TempMax`	FLOAT,
     `NPSHmin`	FLOAT,
+    `altura_geometrica` FLOAT,
     `Head_drop_loss`	FLOAT
   
 );
