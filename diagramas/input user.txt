@@ -2,21 +2,25 @@ Aceleração Gravitacional em São Paulo: 9,786366 m/s² -- constante --.
 
 <h3>Mod. Bomba</h3>
 
-Altura Manométrica*
-Altura de Sucção*
-Temperatura Média do Fluído
-Vazão desejada*
+Altura Manométrica*   (m, float)
+Altura de Sucção*  (m, float)
+Temperatura Média do Fluído   C, F ou K
+Vazão desejada*   (litros/minuto)
+Densidade fluído   (kg/m^3)
+Pressão do fluído na captação / Valvula de pé   (atm ou pascals ou mmhg, preparar para receber os 3 tipos e fazer conversões de atm e mmhg para pascal)  mmhg = Milimetros de Mercúrio
+Pressão de Vapor fluido      (pascals ou mmhg, preparar para receber em mmhg e fazer conversões para pascal)
+Perda de carga no trajeto da sucção
 
 <h3>Mod. Calor<h3>
 
-Temperatura de Entrada Fluido 1
-Temperatura de Entrada Fluido 2
-Vazão Fluído 1
-Vazão Fluído 2
+Temperatura de Entrada Fluido 1     C, F ou K, float
+Temperatura de Entrada Fluido 2     C, F ou K, float
+Vazão Fluído 1     (litros/minuto)
+Vazão Fluído 2     (litros/minuto)
 
 <h3>Mod. Carga<h3>
 Pressão inicial, chamado de P0
 Comprimento da tubulação
-Velocidade
+Velocidade                    m/s, float
 Viscosidade do fluído
-Densidade do fluído
+Densidade do fluído       (kg/m^3)
