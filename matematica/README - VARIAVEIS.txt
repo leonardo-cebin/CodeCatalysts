@@ -29,7 +29,7 @@ Temperatura de Entrada Fluido 2*     C, F ou K, float
 Vazão Fluído 1*     (litros/minuto) ou (kg/s)
 Vazão Fluído 2*     (litros/minuto) ou (kg/s)
 Area de contato (A)*: área de contato de um trocador de calor será obtida pela seguinte 
-*fórmula: 2 * Raio do tubo * Pi * Comprimento * Numero de Tubos
+* fórmula: 2 * Raio do tubo * Pi * Comprimento * Numero de Tubos
 * Unidade metros quadrados
 U: característica do material com que o trocador de calor foi fabricado, varia de acordo com especificações do sistema e com o modelo do dispositivo
 
