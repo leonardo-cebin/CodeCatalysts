@@ -1,3 +1,11 @@
 seguem as instruções para planilha de coeficientes e de como usá-la 
 
 a seguinte tabela, contida na planilha deve ser inteiramente transportada para o software, estes valores são constantes que devem ser acessadas pelo usuário 
+
+parâmetro 1. os valores das constantes apenas são válidos dentro dos limites da temperatura especificadas, foi especificado uma temperatura mínima e uma temperatura máxima. caso o fluido esteja abaixo da temperatura mínima ou acima da temperatura máxima as constantes não são válidas. deve ser retornada uma mensagem da inviabilidade do cálculo neste cenário 
+
+caso o valor da temperatura seja validado e esteja dentro dos limites permitidos os valores A B e C correspondentes a substância devem ser então fornecidos a seguinte fórmula 
+
+fórmula de Antoine: 
+logaritmo base 10 da pressão de vapor igual constante a menos (constante B dividido (constante C + temperatura da substância))
+
