@@ -1,0 +1,4 @@
+Thot_in = Temperatura do fluido quente ao entrar
+Thot_out = Temperatura do fluido quente ao sair
+Tcold_in = Temperatura do fluido frio ao entrar
+Tcold_out = Temperatura do fluido frio ao sair
