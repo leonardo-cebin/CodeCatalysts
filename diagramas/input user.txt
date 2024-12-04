@@ -1,3 +1,5 @@
+Aceleração Gravitacional: 9,786366 m/s² -- constante --.
+
 <h3>Mod. Bomba</h3>
 
 Altura Manométrica*
