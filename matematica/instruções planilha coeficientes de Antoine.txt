@@ -1,0 +1,3 @@
+seguem as instruções para planilha de coeficientes e de como usá-la 
+
+a seguinte tabela, contida na planilha deve ser inteiramente transportada para o software, estes valores são constantes que devem ser acessadas pelo usuário 
