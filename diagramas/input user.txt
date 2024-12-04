@@ -16,8 +16,8 @@ Perda de carga no trajeto da sucção
 
 Temperatura de Entrada Fluido 1     C, F ou K, float
 Temperatura de Entrada Fluido 2     C, F ou K, float
-Vazão Fluído 1     (litros/minuto)
-Vazão Fluído 2     (litros/minuto)
+Vazão Fluído 1     (litros/minuto) ou (kg/s)
+Vazão Fluído 2     (litros/minuto) ou (kg/s)
 
 no caso de um trocador de calor de tubos segue as especificações da máquina que devem constar: (essas especificações são constantes para cada aparelho portanto se o usuário utiliza apenas um aparelho estas permanecerão inalteradas essas informações devem ser salvas no banco de dados do programa)
 um. raio do tubo, isto é, metade do diâmetro 
