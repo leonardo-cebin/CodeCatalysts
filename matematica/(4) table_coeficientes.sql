@@ -1,15 +1,15 @@
 CREATE TABLE `coeficientes` (
-    `ID`	INT,
+    `ID`	INT PRIMARY KEY,
     `Formula`	VARCHAR(512),
     `Compound Name`	VARCHAR(512),
-    `A`	DOUBLE,
-    `B`	DOUBLE,
-    `C`	DOUBLE,
+    `ConstantA`	DOUBLE,
+    `ConstantB`	DOUBLE,
+    `ConstantC`	DOUBLE,
     `TMIN`	INT,
     `TMAX`	INT
 );
 
-INSERT INTO `coeficientes` (`ID`, `Formula`, `Compound Name`, `A`, `B`, `C`, `TMIN`, `TMAX`) VALUES
+INSERT INTO `coeficientes` (`ID`, `Formula`, `Compound Name`, `ConstantA`, `ConstantB`, `ConstantC`, `TMIN`, `TMAX`) VALUES
 	('999', 'H20', 'Water', '8.07131', '1730.63', '233.426', '1', '100'),
 	('998', 'H20', 'Water', '8.14019', '1810.94', '244.485', '99', '374'),
 	('1', 'CCL4', 'carbon-tetrachloride', '6.8941', '1219.58', '227.17', '-20', '101'),
