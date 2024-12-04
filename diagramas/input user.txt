@@ -7,6 +7,7 @@ Altura de Sucção*  (m, float)
 Temperatura Média do Fluído   C, F ou K
 Vazão desejada*   (litros/minuto)
 Densidade fluído   (kg/m^3)
+Pressão atmosférica (atm, ou mmhg, ou pascals. pascals será o default que virá selecionado) --- pode-se perguntar isso OU a altitude
 Pressão do fluído na captação / Valvula de pé   (atm ou pascals ou mmhg, preparar para receber os 3 tipos e fazer conversões de atm e mmhg para pascal)  mmhg = Milimetros de Mercúrio
 Pressão de Vapor fluido      (pascals ou mmhg, preparar para receber em mmhg e fazer conversões para pascal)
 Perda de carga no trajeto da sucção
