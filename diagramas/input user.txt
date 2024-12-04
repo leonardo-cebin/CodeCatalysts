@@ -12,7 +12,7 @@ Pressão do fluído na captação / Valvula de pé   (atm ou pascals ou mmhg, pr
 Pressão de Vapor fluido      (pascals ou mmhg, preparar para receber em mmhg e fazer conversões para pascal)
 Perda de carga no trajeto da sucção
 
-<h3>Mod. Calor<h3>
+<h3>Mod. Calor</h3>
 
 Temperatura de Entrada Fluido 1     C, F ou K, float
 Temperatura de Entrada Fluido 2     C, F ou K, float
@@ -29,7 +29,7 @@ fórmula: 2 * Raio do tubo * Pi * Comprimento * Numero de Tubos
 Unidade metros quadrados
 
 
-<h3>Mod. Carga<h3>
+<h3>Mod. Carga</h3>
 Pressão inicial, chamado de P0
 Comprimento da tubulação
 Velocidade                    m/s, float
