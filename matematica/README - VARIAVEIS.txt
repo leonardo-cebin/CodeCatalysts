@@ -1,4 +1,5 @@
 Aceleração Gravitacional em São Paulo: 9,786366 m/s² -- constante --.
+Pi: 3.14159265
 
 <h3>Mod. Bomba</h3>
 
