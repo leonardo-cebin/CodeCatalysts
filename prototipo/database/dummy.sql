@@ -1,1 +1,2 @@
-
+CREATE DATABASE pump;
+USE pump;
