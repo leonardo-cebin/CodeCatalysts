@@ -1,0 +1,4 @@
+Q = Energia transferida, em W (nosso objetivo)
+U = Constante e propriedade do dispositivo definido pelo fabricante. Irá variar de dispositivo para dispositivo (em Watt/metro quadrado*kelvin)
+A = Area de contato. É simples, é a formula da área lateral de um cilindro, circunferencia * comprimento. pi*diâmetro*comprimento*quantidade (se houver mais tubos). Lembrando que Diâmetro = 2 raios
+LMTD = Calculado previamente. Deve ser observado se o sentido do fluxo é contrário ou paralelo. Deverão haver as duas opções disponíveis, talvez atráves de um radiobutton. Valor em Celsius ou Kelvin (não faz diferença entre um e outro)
