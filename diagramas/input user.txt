@@ -19,6 +19,16 @@ Temperatura de Entrada Fluido 2     C, F ou K, float
 Vazão Fluído 1     (litros/minuto)
 Vazão Fluído 2     (litros/minuto)
 
+no caso de um trocador de calor de tubos segue as especificações da máquina que devem constar: (essas especificações são constantes para cada aparelho portanto se o usuário utiliza apenas um aparelho estas permanecerão inalteradas essas informações devem ser salvas no banco de dados do programa)
+um. raio do tubo, isto é, metade do diâmetro 
+dois. comprimento do tubo 
+três. quantidade total de tubos
+
+Area de contato (A): área de contato de um trocador de calor será obtida pela seguinte 
+fórmula: 2 * Raio do tubo * Pi * Comprimento * Numero de Tubos
+
+
+
 <h3>Mod. Carga<h3>
 Pressão inicial, chamado de P0
 Comprimento da tubulação
