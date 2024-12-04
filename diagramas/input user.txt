@@ -26,8 +26,7 @@ três. quantidade total de tubos
 
 Area de contato (A): área de contato de um trocador de calor será obtida pela seguinte 
 fórmula: 2 * Raio do tubo * Pi * Comprimento * Numero de Tubos
-Unidade metros quadrados)
-
+Unidade metros quadrados
 
 
 <h3>Mod. Carga<h3>
