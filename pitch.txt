@@ -1,20 +1,20 @@
 //////////////////////////////// QUAISQUER MUDANÇAS NO PITCH DEVEM SER REGISTRADAS E NÃO SOBRESCREVER O ORIGINAL /////////////////////////
 
-Module 1. Simulação Básica de Trocador de Calor com Controle de Temperatura de Saída
-
-            Objetivo: Permitir que o usuário ajuste a vazão de entrada e a temperatura de dois fluidos em um trocador de calor e visualize a temperatura de saida.
-            Descrição: O software simula a troca de calor entre dois fluidos e permite que o usuario altere variáveis, como vazão e temperatura de entrada. A partir desses dados, o software pode calcular a temperatura de saida estimada, sem entrar em detalhes de eficiência de troca térmica.
-            Variáveis: Temperatura de entrada e saida dos fluidos, vazão.
-            Benefício: Intuitivo e com base em controles simples, permitindo que os alunos visualizem o impacto de variáveis de troca térmica sem se aprofundar em cálculos avançados.
-
-Module 2. Simulação de Seleção de Bombas com NPSH e Altura Manométrica
+Module Bomba. Simulação de Seleção de Bombas com NPSH e Altura Manométrica
 
             Objetivo: Criar um simulador que ajuda o usuario a determinar o tipo de bomba adequado para um sistema de bombeamento, com base em variáveis simples.
             Descrição: O software permite que o usuário insira a altura manométrica, a vazão desejada e a altura de sucção. A partir disso, o programa calcula o NPSH (Net Positive Suction Head) e sugere tipos de bomba que atenderiam ao sistema.
             Variáveis: Altura manométrica, vazão, altura de sucção, pressão atmosférica.
             Benefício: Uma prática simples e prática, familiar para sistemas de bombeamento em geral.
 
-Module 3. Simulação de Controle de Pressão (Perda de carga) em Sistema de Tubulação
+Module Calor. Simulação Básica de Trocador de Calor com Controle de Temperatura de Saída
+
+            Objetivo: Permitir que o usuário ajuste a vazão de entrada e a temperatura de dois fluidos em um trocador de calor e visualize a temperatura de saida.
+            Descrição: O software simula a troca de calor entre dois fluidos e permite que o usuario altere variáveis, como vazão e temperatura de entrada. A partir desses dados, o software pode calcular a temperatura de saida estimada, sem entrar em detalhes de eficiência de troca térmica.
+            Variáveis: Temperatura de entrada e saida dos fluidos, vazão.
+            Benefício: Intuitivo e com base em controles simples, permitindo que os alunos visualizem o impacto de variáveis de troca térmica sem se aprofundar em cálculos avançados.
+
+Module Carga/Mapa. Simulação de Controle de Pressão (Perda de carga) em Sistema de Tubulação
 
             Objetivo: Permitir que o usuario controle a pressão e avalie a perda de carga em uma rede de tubulações ajustando válvulas ou pontos de restrição.
             Descrição: O usuário pode simular um sistema de tubulação e alterar a pressão em diferentes fases ajustando válvulas de restrição. O software pode calcular quedas de pressão (perda de carga) aproximadas e exibir o fluxo em cada seção.
