@@ -1,0 +1,63 @@
+P atm = é a pressão atmosférica.
+
+𝐻 suc =  é a altura da coluna de líquido na sucção (geralmente medida a partir do nível do líquido até o centro da bomba).
+
+𝐻 vapor =  é a pressão de vapor do fluido (depende da temperatura).
+
+
+Perdas de carga representam as quedas de pressão nas tubulações e acessórios.
+
+
+ρ é a densidade do líquido
+
+
+g = é a aceleração da gravidade.
+
+
+NPSH a = (Patm + H suc - H vapor - Perdas de carga) / p.g
+
+
+
+
+
+
+
+
+
+Bombas centrífugas:
+
+Para bombas centrífugas industriais padrão, o NPSH requerido (NPSH-R) geralmente fica entre 1 a 5 metros (ou 3 a 15 pés), dependendo do tipo de bomba, tamanho e aplicação.
+Bombas centrífugas para altas vazões ou bombas de grande porte podem exigir valores mais altos, frequentemente entre 3 a 7 metros (ou 10 a 23 pés).
+Bombas de lóbulos (ou de deslocamento positivo):
+
+As bombas de lóbulos, sendo geralmente usadas para líquidos viscosos ou em aplicações de transferência de fluidos sensíveis, geralmente têm NPSH mais baixos, às vezes em torno de 1 a 2 metros.
+Bombas peristálticas:
+
+Bombas peristálticas também tendem a ter NPSH mais baixo, geralmente entre 1 a 3 metros, devido ao seu design.
+Bombas submersíveis:
+
+Bombas submersíveis, especialmente para drenagem de água ou esgoto, podem ter valores de NPSH-R entre 2 a 5 metros, dependendo do tipo e das condições operacionais.
+Bombas de alta eficiência ou especiais:
+
+Bombas projetadas para altas eficiências e com designs específicos para reduzir o NPSH requerido podem ter valores mais baixos, por exemplo, menos de 2 metros, dependendo da aplicação.
+
+
+
+
+
+link bombas centrifuga
+
+https://www.ebombas.com.br/bomba-multiestagio-schneider-me-in-1320-2-cv?srsltid=AfmBOorb1_9-PUPzbKNT0BrHU6LuYVcFNa8wUTnQ8vVSem7ohDWsROWy
+
+
+
+https://www.ebombas.com.br/index.php?route=product/product&product_id=450&search=bomba
+
+
+
+link bomba periferica
+
+https://www.branco.com.br/la/pt_br/catalogo-de-produtos/bombas-perifericas/bb-1000-p.html
+
+
+https://www.lojadomecanico.com.br/produto/120879/33/619/Bomba-Periferica-12HP-33-Lmin-220V
