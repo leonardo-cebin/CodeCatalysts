@@ -17,8 +17,3 @@ o segundo é o npsh disponível
 o npsh disponível é o valor real empírico na bomba durante a operação.
 
 em termos simples, npsh disponível maior ou igual que NPSH mínimo está seguro, npsh disponível menor que NPSH mínimo não está seguro
-
-
-cálculos
-
-cabeça: cabeça igual a pressão em Pascals dividido por densidade do fluido em quilograma por metro cúbico vezes aceleração da gravidade em metros por segundo ao quadrado, resultado em metros
