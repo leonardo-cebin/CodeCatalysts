@@ -1,0 +1,20 @@
+<h3>Mod. Bomba</h3>
+
+Altura Manométrica*
+Altura de Sucção*
+Temperatura Média do Fluído
+Vazão desejada*
+
+<h3>Mod. Calor<h3>
+
+Temperatura de Entrada Fluido 1
+Temperatura de Entrada Fluido 2
+Vazão Fluído 1
+Vazão Fluído 2
+
+<h3>Mod. Carga<h3>
+Pressão inicial, chamado de P0
+Comprimento da tubulação
+Velocidade
+Viscosidade do fluído
+Densidade do fluído

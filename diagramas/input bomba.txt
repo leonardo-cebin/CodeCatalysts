@@ -1,4 +1,0 @@
-Altura Manométrica*
-Altura de Sucção*
-Temperatura Média do Fluído
-Vazão desejada*
