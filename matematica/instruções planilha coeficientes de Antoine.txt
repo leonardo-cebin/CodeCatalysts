@@ -9,4 +9,4 @@ caso o valor da temperatura seja validado e esteja dentro dos limites permitidos
 fórmula de Antoine: 
 logaritmo base 10 da pressão de vapor igual constante a menos (constante B dividido (constante C + temperatura da substância))
 
-a temperatura da substância será informada pelo usuário, as constantes A B e C serão acessados e recuperadas e a pressão de vapor será a resposta que buscamos obter
+a temperatura da substância será informada pelo usuário em CELSIUS, as constantes A B e C serão acessados e recuperadas e a pressão de vapor será a resposta que buscamos obter
