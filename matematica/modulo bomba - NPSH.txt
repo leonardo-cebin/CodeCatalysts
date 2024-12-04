@@ -11,8 +11,14 @@ há dois valores que podemos calcular de npsh
 iremos calcular os dois 
 
 o primeiro é o npsh mínimo 
-o npsh mínimo é a pressão mínima dentro da tubulação para se ter a segurança de que não vão se formar bolhas. se a pressão for menor que essa começarão a formação de bolhas, se a pressão for maior que essa o sistema estará protegido
+o npsh mínimo é a pressão mínima dentro da tubulação para se ter a segurança de que não vão se formar bolhas. se a pressão for menor que essa começarão a formação de bolhas, se a pressão for maior que essa o sistema estará protegido. Este é um requisito de especificação das Bombas não é um valor experienciado na operação em si mas sim um limite de capacidade operacional definido pelo fabricante.
 
+o segundo é o npsh disponível 
+o npsh disponível é o valor real empírico na bomba durante a operação.
+
+em termos simples, npsh disponível maior ou igual que NPSH mínimo está seguro, npsh disponível menor que NPSH mínimo não está seguro
 
 
 cálculos
+
+cabeça: cabeça igual a pressão em Pascals dividido por densidade do fluido em quilograma por metro cúbico vezes aceleração da gravidade em metros por segundo ao quadrado, resultado em metros
