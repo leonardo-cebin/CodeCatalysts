@@ -1,1 +1,15 @@
+Hsuccao = altura de sucção informada pelo usuário 
+
+Patm = pressão atmosférica no local do experimento em Pascals
+
+Pvapor = pressão de vapor correspondente ao fluido, consultar a fórmula para determinar pressão de vapor 
+
+p = densidade característica do fluido 
+
+g = aceleração da gravidade padronizada para a cidade de São Paulo, constante do sistema 
+
+Hespecificações = constante pertinente a bomba determinada pelo fabricante e que constará no manual da mesma. será um valor diferente para cada modelo.
+
+Hcarga = a perda de carga/perda de pressão causada pelo mapeamento do encanamento, deve ser calculado em separado
+
 
