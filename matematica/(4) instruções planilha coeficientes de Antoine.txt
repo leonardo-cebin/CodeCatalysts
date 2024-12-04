@@ -10,3 +10,5 @@ fórmula de Antoine:
 logaritmo base 10 da pressão de vapor igual constante a menos (constante B dividido (constante C + temperatura da substância))
 
 a temperatura da substância será informada pelo usuário em CELSIUS, as constantes A B e C serão acessados e recuperadas e a pressão de vapor será a resposta que buscamos obter
+
+IMPORTANTE!: A pressão de vapor resultante estará em milimetros de mercúrio.
