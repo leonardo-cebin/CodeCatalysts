@@ -1,0 +1,18 @@
+introdução e conceito
+
+
+o npsh é um valor que assegura a segurança da bomba contra o risco de formação de bolhas, regiões de baixa pressão e vapores dentro da sessão de sucção do cano. 
+
+a sucção de uma bomba acontece através da redução da pressão interna dentro da tubulação, isto pode levar à formação de bolhas que danificam tanto a tubulação quanto a bomba. 
+
+a este fenômeno chamamos de cavitação 
+
+há dois valores que podemos calcular de npsh 
+iremos calcular os dois 
+
+o primeiro é o npsh mínimo 
+o npsh mínimo é a pressão mínima dentro da tubulação para se ter a segurança de que não vão se formar bolhas. se a pressão for menor que essa começarão a formação de bolhas, se a pressão for maior que essa o sistema estará protegido
+
+
+
+cálculos
