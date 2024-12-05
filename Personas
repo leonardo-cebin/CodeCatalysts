@@ -1,0 +1,57 @@
+### **1. Persona Acadêmica: Aluno**  
+- **Nome:** Lucas Almeida  
+- **Idade:** 20 anos  
+- **Gênero:** Masculino  
+- **Foto:** Jovem com mochila e laptop em uma biblioteca.  
+- **Descrição:** Lucas é estudante de engenharia mecânica, no 4º semestre. Dedica-se a aprender sobre transferência de calor e sistemas térmicos, buscando consolidar os conceitos teóricos com ferramentas práticas.  
+- **Nível de Conhecimento:** Básico – recém-iniciado no uso de simuladores.  
+- **Contexto de Interação:** Utiliza o software para exercícios acadêmicos e experimentos simulados. Busca compreender como diferentes variáveis impactam a performance de trocadores de calor.  
+- **Soft Skills:** Curiosidade, resolução de problemas, gerenciamento de tempo.
+
+---
+
+### **2. Persona Acadêmica: Professor**  
+- **Nome:** Ana Costa  
+- **Idade:** 45 anos  
+- **Gênero:** Feminino  
+- **Foto:** Professora em frente a um quadro branco, segurando uma planilha.  
+- **Descrição:** Ana é professora de engenharia térmica em uma universidade. Ela usa o software para ilustrar cenários de troca de calor para seus alunos, desenvolvendo atividades práticas e simuladas.  
+- **Nível de Conhecimento:** Intermediário – utiliza o software regularmente como apoio didático.  
+- **Contexto de Interação:** Prepara simulações para aulas, fornece exercícios interativos e analisa os resultados dos alunos no software.  
+- **Soft Skills:** Comunicação, didática, organização.
+
+---
+
+### **3. Persona Profissional: Funcionário**  
+- **Nome:** João Silva  
+- **Idade:** 32 anos  
+- **Gênero:** Masculino  
+- **Foto:** Jovem em escritório técnico, com prancheta.  
+- **Descrição:** João trabalha como analista técnico em uma empresa de manutenção de sistemas HVAC. Ele utiliza o software para simular condições de operação de trocadores de calor antes de realizar intervenções técnicas.  
+- **Nível de Conhecimento:** Intermediário – familiarizado com simulações de situações específicas.  
+- **Contexto de Interação:** Testa condições extremas para manutenção preventiva e corretiva.  
+- **Soft Skills:** Atenção aos detalhes, tomada de decisão, colaboração.
+
+---
+
+### **4. Persona Industrial: Engenheiro**  
+- **Nome:** Mariana Ribeiro  
+- **Idade:** 38 anos  
+- **Gênero:** Feminino  
+- **Foto:** Engenheira em uniforme industrial com capacete.  
+- **Descrição:** Mariana é engenheira de processos em uma refinaria, responsável por otimizar o desempenho dos trocadores de calor no ambiente industrial.  
+- **Nível de Conhecimento:** Avançado – utiliza o software para análise detalhada e cálculos de eficiência energética.  
+- **Contexto de Interação:** Executa simulações complexas para tomada de decisões estratégicas.  
+- **Soft Skills:** Pensamento crítico, liderança, solução de problemas.
+
+---
+
+### **5. Persona Industrial: Técnico**  
+- **Nome:** Pedro Gonçalves  
+- **Idade:** 40 anos  
+- **Gênero:** Masculino  
+- **Foto:** Técnico em campo, com ferramentas em mãos.  
+- **Descrição:** Pedro é técnico em manutenção industrial. Utiliza o software como suporte para diagnosticar falhas e planejar reparos.  
+- **Nível de Conhecimento:** Intermediário – foca na aplicação prática para diagnósticos rápidos.  
+- **Contexto de Interação:** Simula condições do equipamento para identificar problemas e prever soluções.  
+- **Soft Skills:** Adaptabilidade, raciocínio lógico, trabalho em equipe.
