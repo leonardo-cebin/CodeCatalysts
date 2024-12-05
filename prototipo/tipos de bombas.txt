@@ -1,0 +1,70 @@
+NPSHA PRECISA SER MAIOR QUE O NPSHr para que a bomba funcione corretamente e evite cavitação
+
+Bombas centrífugas monobloco
+baixo NPSH:Exemplo: KSB Etanorm (NPSHr 2,5 m para baixa vazão).
+alto NPSH: Exemplo: Schneider ME-IN (NPSHr 4-6 m para alta vazão).
+
+
+
+
+Bombas de alta pressão:
+baixo NPSH:Exemplo: KSB Movitec H  Aplicação: Sistemas de pressurização e abastecimento de água em indústrias.
+NPSHr: ~2,5 m para baixa vazão.
+Características: Multiestágio, rotor fechado, alta eficiência.
+
+Exemplo: Grundfos CR Flex Aplicação: Transferência de fluidos sob altas pressões.  NPSHr: 2-3 m.
+Características: Versátil, feita para sistemas compactos com pouca altura de sucção.
+
+alto NPSH: Exemplo: Wilo MHIL Aplicação: Processos industriais e prédios comerciais. NPSHr: 6-8 m (para altas vazões).
+Características: Bombas multiestágio robustas, adequadas para altas pressões.
+Exemplo: Schneider ME-HP Aplicação: Sistemas que exigem alta altura manométrica total. NPSHr: ~7 m.
+Características: Rotor inox, alta durabilidade.
+
+
+
+
+
+Bombas submersíveis
+baixo NPSH:Baixo NPSH: Exemplo: Grundfos SP (ótimas para locais com NPSHa limitado).
+Alto NPSH: Exemplo: Franklin Electric FPS 4400 (para sistemas com alta coluna d’água).
+
+
+
+
+
+
+
+
+Bombas periféricas:
+baixo NPSH: Exemplo: Dancor Serie PK Aplicação: Abastecimento residencial e pequenos sistemas industriais. NPSHr: ~2 m.
+Características: Compacta, baixa vazão (~3 m³/h), mas alta pressão.
+
+Exemplo: Schneider CP Aplicação: Ideal para sistemas de recalque com baixa vazão. NPSHr: 1,5-2,5 m.
+Características: Alta resistência a cavitação, funcionamento silencioso.
+
+alto NPSH:Exemplo: Weg Peripheral Line Aplicação: Sistemas que requerem alta pressão em recalques curtos. NPSHr: ~4-6 m.
+Características: Rotor periférico eficiente, construção robusta.
+
+Exemplo: Leo Pump LP-S Aplicação: Irrigação e transferência de líquidos em alturas elevadas. NPSHr: ~6 m.
+Características: Modelo econômico, alta durabilidade.
+
+
+
+
+
+
+Bombas de circulação:
+baixo NPSH: Exemplo: Grundfos Magna3, Aplicação: Sistemas HVAC (calefação, ventilação, ar condicionado). NPSHr: ~2-3 m.
+Características: Circulação de água quente/fria, controle inteligente.
+
+Exemplo: Dab Evosta, Aplicação: Circuitos de aquecimento em residências. NPSHr: 1,5-2 m.
+Características: Design compacto, econômico em energia.
+
+alto NPSH:Exemplo: Wilo Stratos, Aplicação: Sistemas industriais de grande porte. NPSHr: ~5-6 m.
+Características: Alta capacidade, compatível com fluidos em altas temperaturas.
+
+Exemplo: KSB Etaline, Aplicação: Sistemas de circulação para edifícios comerciais e industriais. NPSHr: 6-8 m.
+Características: Altamente confiável, feita para operação contínua.
+
+
+
