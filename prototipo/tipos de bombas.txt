@@ -131,4 +131,9 @@ condição de instalação:
 submersivel
 superficie
 
-
+NPSHa: 
+tempratura do liquido: 
+tipo de liquido: 
+vazão: 
+altura manometica: 
+condição de instalação: submersível/superficie
