@@ -29,12 +29,6 @@ baixo NPSH:Baixo NPSH: Exemplo: Grundfos SP (ótimas para locais com NPSHa limit
 Alto NPSH: Exemplo: Franklin Electric FPS 4400 (para sistemas com alta coluna d’água).
 
 
-
-
-
-
-
-
 Bombas periféricas:
 baixo NPSH: Exemplo: Dancor Serie PK Aplicação: Abastecimento residencial e pequenos sistemas industriais. NPSHr: ~2 m.
 Características: Compacta, baixa vazão (~3 m³/h), mas alta pressão.
@@ -49,10 +43,6 @@ Exemplo: Leo Pump LP-S Aplicação: Irrigação e transferência de líquidos em
 Características: Modelo econômico, alta durabilidade.
 
 
-
-
-
-
 Bombas de circulação:
 baixo NPSH: Exemplo: Grundfos Magna3, Aplicação: Sistemas HVAC (calefação, ventilação, ar condicionado). NPSHr: ~2-3 m.
 Características: Circulação de água quente/fria, controle inteligente.
@@ -65,6 +55,30 @@ Características: Alta capacidade, compatível com fluidos em altas temperaturas
 
 Exemplo: KSB Etaline, Aplicação: Sistemas de circulação para edifícios comerciais e industriais. NPSHr: 6-8 m.
 Características: Altamente confiável, feita para operação contínua.
+
+Tipo de líquido:
+
+Água limpa, efluentes, líquidos viscosos, líquidos químicos.
+Isso afeta o tipo de bomba que pode ser usada (centrífugas, submersíveis, periféricas, etc.), pois cada tipo de bomba lida de maneira diferente com o fluido e seus requisitos de viscosidade ou sólidos.
+Vazão (m³/h ou l/min):
+
+Determina a quantidade de fluido a ser movimentada.
+Baixa vazão (0-5 m³/h): Bombas periféricas, submersíveis.
+Média vazão (5-30 m³/h): Bombas centrífugas monobloco.
+Alta vazão (>30 m³/h): Bombas de alta pressão ou submersíveis dependendo da aplicação.
+Altura Manométrica Total (HMT ou mca):
+
+Baixa mca (<30 m): Bombas periféricas ou centrífugas monobloco.
+Média mca (30-70 m): Bombas centrífugas, submersíveis.
+Alta mca (>70 m): Bombas de alta pressão.
+
+
+Temperatura do líquido:
+
+Influencia o material da bomba e o tipo de vedação.
+Água fria: Bombas padrão.
+Água quente ou líquidos quentes: Bombas de circulação ou específicas para altas temperaturas.
+
 
 
 
