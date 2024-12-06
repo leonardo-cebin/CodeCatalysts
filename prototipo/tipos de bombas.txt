@@ -1,7 +1,5 @@
 NPSHA PRECISA SER MAIOR QUE O NPSHr para que a bomba funcione corretamente e evite cavitação
 
-NPSHa PRECISA SER MAIOR QUE O NPSHr para que a bomba funcione corretamente e evite cavitação
-
 Bombas centrífugas monobloco
 baixo NPSH: KSB Etanorm Aplicação: Sistemas gerais de transporte de líquidos, com água limpa. NPSHr: ~2,5 m (para baixa vazão).
 Características: Alta eficiência, compacta, ideal para operações de baixa vazão.
