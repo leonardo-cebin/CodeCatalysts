@@ -1,0 +1,24 @@
+
+Como Lucas, quero visualizar simulações simples de transferência de calor em trocadores, para consolidar os conceitos aprendidos em aula.
+Como Lucas, quero alterar variáveis como temperatura de entrada e vazão, para entender como afetam a eficiência do sistema.
+Como Lucas, quero salvar e comparar simulações realizadas anteriormente, para acompanhar meu progresso nos exercícios acadêmicos.
+
+Acadêmica: Professor (Ana Costa) 
+Como Ana, quero criar simulações interativas com diferentes parâmetros, para explicar conceitos complexos de troca de calor em aula.
+Como Ana, quero acessar relatórios detalhados sobre os exercícios realizados pelos alunos no software, para avaliar seu desempenho.
+Como Ana, quero personalizar as atividades no software, para adaptar os conteúdos ao nível da turma.
+
+Profissional: Funcionário (João Silva)
+Como João, quero simular condições extremas nos trocadores de calor, para antecipar falhas em sistemas HVAC.
+Como João, quero gerar relatórios claros e objetivos sobre as condições simuladas, para apresentá-los à equipe de manutenção.
+Como João, quero comparar simulações anteriores com dados reais, para validar as soluções adotadas.
+
+Industrial: Engenheira (Mariana Ribeiro)
+Como Mariana, quero realizar simulações detalhadas que incluam cálculos de eficiência energética, para otimizar o desempenho dos trocadores de calor na refinaria.
+Como Mariana, quero exportar os resultados das simulações para ferramentas externas, para integrá-los ao planejamento estratégico da empresa.
+Como Mariana, quero ajustar múltiplos parâmetros simultaneamente nas simulações, para avaliar diferentes cenários operacionais de forma eficiente.
+
+Industrial: Técnico (Pedro Gonçalves)
+Como Pedro, quero simular condições específicas do equipamento antes de realizar intervenções, para planejar reparos de forma mais eficiente.
+Como Pedro, quero identificar falhas comuns no sistema com base nos resultados das simulações, para acelerar o diagnóstico no campo.
+Como Pedro, quero acessar simulações no tablet ou celular, para facilitar meu trabalho em locais de difícil acesso.
