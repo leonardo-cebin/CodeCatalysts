@@ -139,3 +139,5 @@ altura manometica (mca):
 condição de instalação: submersível/superficie
 
 O parâmetro "Condição de instalação" (submersível/superfície) serve exclusivamente para determinar se a bomba recomendada deve ser submersível.
+O parâmetro "Temperatura do liquido" valor nulo, categoria de bomba escolhida + suporte de calor requerido
+O parâmetro "NPSH"  baixo/alto 
