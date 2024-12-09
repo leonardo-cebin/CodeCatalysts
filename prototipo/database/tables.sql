@@ -11,6 +11,8 @@ CREATE TABLE `pumps` (
     `TempMax`	FLOAT,
     `NPSHmin`	FLOAT,
     `altura_geometrica` FLOAT,
-    `Head_drop_loss`	FLOAT
-  
+    `Head_drop_loss`	FLOAT,
+    `fluid_type` VARCHAR(30),
+    `vazao` FLOAT,
+    `submersivel` BOOL
 );
