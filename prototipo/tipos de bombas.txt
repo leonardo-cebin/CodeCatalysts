@@ -137,3 +137,5 @@ tipo de liquido:
 vazão: 
 altura manometica (mca): 
 condição de instalação: submersível/superficie
+
+O parâmetro "Condição de instalação" (submersível/superfície) serve exclusivamente para determinar se a bomba recomendada deve ser submersível.
