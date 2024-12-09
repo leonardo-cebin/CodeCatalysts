@@ -14,5 +14,5 @@ CREATE TABLE `pumps` (
     `Head_drop_loss`	FLOAT,
     `fluid_type` VARCHAR(30),
     `vazao` FLOAT,
-    `submersivel` BOOL
+    `submersivel` BOOL DEFAULT false
 );
