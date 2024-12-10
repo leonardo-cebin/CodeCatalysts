@@ -1,0 +1,58 @@
+/* style.css */
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.left-controls, .center-controls, .right-controls {
+    display: flex;
+    align-items: center;
+}
+
+.keypad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow-row {
+    display: flex;
+}
+
+.arrow-up, .arrow-down, .arrow-left, .arrow-right, .square-icon, .center-button {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    /* Add appropriate background colors or images */
+}
+
+.center-controls select, .center-controls input {
+    margin: 0 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.left-content, .center-content, .right-content {
+    flex: 1;
+    border: 1px solid black;
+    /* Add content as needed */
+}
+
+.square-icon {
+    width: 150px;
+    height: 150px;
+    /* other styles */
+}
