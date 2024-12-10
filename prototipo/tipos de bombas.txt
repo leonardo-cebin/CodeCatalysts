@@ -103,6 +103,51 @@ Características: Perfeita para aplicações de bombeamento suave e sem pulsaç�
 alto NPSH: Alfa Laval  Aplicação: Processos industriais com líquidos viscosa e de alta pressão. NPSHr: ~4-5 m
 Características: Durabilidade e baixo desgaste para líquidos abrasivos.
 
+Bombas submersiveis com o tipo de liquido viscoso ou com solidos:
+Bombas Submersíveis com Baixo NPSHr
+Flygt 3000 Series (Xylem)
+Aplicação: Liquidos viscosos e sólidos em suspensão, como águas residuais industriais e lamas.
+Características:
+Alta resistência ao desgaste.
+Rotores anti-entupimento.
+Ideal para alta densidade de sólidos.
+NPSHr: Aproximadamente 2,0 a 3,0 metros.
+Observação: Adequada para líquidos espessos e sólidos com boa durabilidade.
+
+Grundfos SP (Série submersível)
+Aplicação: Bombeamento de águas limpas, mas também pode lidar com líquidos viscosos em algumas versões.
+Características:
+Compacta, eficiente.
+Boa resistência a cavitação.
+Ideal para profundidades submersas.
+NPSHr: Aproximadamente 2 metros.
+Observação: Embora seja mais indicada para águas limpas, pode ser adaptada a líquidos viscosos dependendo do modelo específico.
+
+Bombas Submersíveis com Alto NPSHr
+
+Tsurumi KRS Series
+Aplicação: Liquidos com alta viscosidade e sólidos abrasivos, como os encontrados em mineração e construção pesada.
+Características:
+Impulsores resistentes a abrasão.
+Alta capacidade e durabilidade.
+NPSHr: 4,0 a 6,0 metros.
+Observação: Ideal para materiais altamente abrasivos e lamas densas.
+
+ABS Scavenger (Sulzer)
+Aplicação: Líquidos misturados com sólidos fibrosos ou orgânicos em estações de bombeamento de águas residuais industriais e municipais.
+Características:
+Alta eficiência energética.
+Sistema de controle de entupimentos.
+NPSHr: 5,0 a 6,0 metros.
+Observação: Excelente para sólidos fibrosos e aplicações em ambientes de efluentes.
+
+Grindex Bravo Series
+Aplicação: Bombeamento de líquidos viscosos e com sólidos pesados, como em mineração e construção.
+Características:
+Resistente ao desgaste com cromo endurecido.
+Desempenho excelente em condições abrasivas.
+NPSHr: 4,5 a 6,0 metros.
+Observação: Compacta e robusta, ideal para ambientes industriais pesados.
 
 Tipo de líquido:
 Água limpa, efluentes, líquidos viscosos, líquidos químicos.
@@ -138,6 +183,12 @@ vazão:
 altura manometica (mca): 
 condição de instalação: submersível/superficie
 
+
+
 O parâmetro "Condição de instalação" (submersível/superfície) serve exclusivamente para determinar se a bomba recomendada deve ser submersível.
 O parâmetro "Temperatura do liquido" valor nulo, categoria de bomba escolhida + suporte de calor requerido
 O parâmetro "NPSH"  baixo/alto 
+O parâmetro 'tipo de líquido' define que as bombas peristálticas ou de lóbulos serão recomendadas para líquidos viscosos ou com sólidos. Se a vazão for alta e o fluido for viscoso, a bomba de lóbulos será preferida, mas para vazões baixas ou líquidos abrasivos (partículas sólidas ou substâncias que podem desgastar os componentes internos de uma bomba devido à fricção ou impacto mecânico), a bomba peristáltica será recomendada."
+Se ambos os parâmetros "tipo de liquido" e "condição de instalação"  tiverem o valor verdadeiro a bomba escolhida sera "Bombas submersiveis com o tipo de liquido viscoso ou com solidos"  condição de instalação > tipo de liquido
+
+
