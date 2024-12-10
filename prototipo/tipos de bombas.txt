@@ -190,5 +190,6 @@ O parâmetro "Temperatura do liquido" valor nulo, categoria de bomba escolhida +
 O parâmetro "NPSH"  baixo/alto 
 O parâmetro 'tipo de líquido' define que as bombas peristálticas ou de lóbulos serão recomendadas para líquidos viscosos ou com sólidos. Se a vazão for alta e o fluido for viscoso, a bomba de lóbulos será preferida, mas para vazões baixas ou líquidos abrasivos (partículas sólidas ou substâncias que podem desgastar os componentes internos de uma bomba devido à fricção ou impacto mecânico), a bomba peristáltica será recomendada."
 Se ambos os parâmetros "tipo de liquido" e "condição de instalação"  tiverem o valor verdadeiro a bomba escolhida sera "Bombas submersiveis com o tipo de liquido viscoso ou com solidos"  condição de instalação > tipo de liquido
+O parâmetro "vazão" baixa vazão = Bombas Periféricas, Bombas de Alta Pressão.
 
 
