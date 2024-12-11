@@ -1,43 +1,508 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Website Prototype</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout da Interface</title>
+    <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%; /* Make sure body takes full height of the screen */
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        margin: 0; /* Remove default margin */
+        background-color: #f0f0f0; /* Optional: keep background color */
+      }
+
+      /* Main container */
+      .container {
+        max-width: 1200px;
+        margin: 40px; /* Space around the container */
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* Top Section */
+      .top-section {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #eee;
+        margin-bottom: 20px;
+      }
+
+      /* Navigation (arrows and buttons) */
+      .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .navigation button {
+        background-color: #007bff;
+        border: none;
+        color: white;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .grid .start {
+        background-color: #555555; /* Light grey color */
+      }
+      .grid .end {
+        background-color: #dab285; /* Light grey color */
+      }
+
+      .navigation button:hover {
+        background-color: #0056b3;
+      }
+
+      /* Controls Section (Select and Input) */
+      .controls {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 250px;
+      }
+
+      .grid div .length-text {
+        position: absolute;
+        bottom: 48px; /* Distance from the bottom */
+        left: 0px; /* Distance from the left */
+        font-size: 12px; /* Font size for the length text */
+        color: #333; /* Text color */
+        font-weight: bold; /* Make the text stand out */
+        white-space: nowrap; /* Prevent the text from wrapping */
+        max-width: 20px;
+        max-height: 16px;
+      }
+
+      .controls select,
+      .controls input {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 100%;
+        transition: border-color 0.3s ease;
+      }
+
+      .controls select:focus,
+      .controls input:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+
+      /* Icon and Diagram Section */
+      .icon,
+      .diagram {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f9f9f9;
+      }
+
+      /* Grid Section */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(15, 1fr); /* 15 columns */
+        grid-template-rows: repeat(10, 1fr); /* 10 rows */
+        gap: 1px;
+        width: 100%;
+        height: 150px;
+        margin-bottom: 20px;
+        /* Remove borders as previously discussed */
+      }
+
+      .grid div {
+        background-color: #e0e0e0; /* Light grey background for grid cells */
+        border: 1px dotted #444;
+        cursor: pointer;
+        width: 65px; /* 60px wide */
+        height: 65px; /* 60px tall */
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        position: relative;
+      }
+
+      /* Style for the second image (layered on top of the first image) */
+      .second-image {
+        position: absolute; /* Position it over the first image */
+        top: 0;
+        left: 30px;
+        width: 50%;
+        height: 50%;
+        z-index: 1; /* Ensure it's above the first image */
+        object-fit: contain; /* Scale the image proportionally inside the cell */
+      }
+
+      .grid-image {
+        max-width: 100%; /* Make the image responsive within the cell */
+        max-height: 100%; /* Ensure the image fits within the cell */
+      }
+
+      .grid .selected {
+        background-color: #007bff; /* Blue background for the selected cell */
+      }
+
+      .grid .cell-text {
+        font-size: 12px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .top-section {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .navigation {
+          flex-direction: row;
+          justify-content: center;
+          gap: 20px;
+        }
+
+        .bottom-section {
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .grid {
+          grid-template-columns: repeat(
+            5,
+            1fr
+          ); /* Fewer columns for smaller screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <div class="left-controls">
-                <div class="keypad">
-                    <button class="arrow-up">↑</button>
-                    <div class="arrow-row">
-                        <button class="arrow-left">←</button>
- <button class="center-button">O</button>
-                        <button class="arrow-right">→</button>
-                    </div>
-                    <button class="arrow-down">↓</button>
-                </div>
-            </div>
-            <div class="center-controls">
-                <select id="u-turn-select">
-                    <option value="u-turn">U-Turn</option>
-                </select>
-                <select id="copper-select">
-                    <option value="copper">Copper</option>
-                </select>
-                <input type="text" id="comprimento-input" placeholder="Comprimento">
-            </div>
-            <div class="right-controls">
-                <div class="square-icon"></div>
-                <div class="right-arrow"></div>
-               
-            </div>
+      <div class="top-section">
+        <div class="navigation">
+          <button id="up">▲</button>
+          <div>
+            <button id="left">◀</button>
+            <button id="add">+</button>
+            <button id="right">▶</button>
+          </div>
+          <button id="down">▼</button>
+
+          <!-- New buttons for Rotate, Start, and End -->
+          <button id="rotate">↻</button>
+          <button id="defineStart">Start</button>
+          <button id="defineEnd">End</button>
         </div>
-        <div class="content">
-            <div class="left-content"></div>
-            <div class="center-content"></div>
-            <div class="right-content"></div>
+        <div class="controls">
+          <select id="type">
+            <option>Junção 90º</option>
+            <option>Junção T</option>
+            <option>Valvula Aberta</option>
+            <option>Valvula 1/2</option>
+            <option>Valvula 1/4</option>
+            <option>Reto Horizontal</option>
+            <option>Reto Vertical</option>
+          </select>
+          <select id="material">
+            <option>Cobre</option>
+            <option>Ferro</option>
+            <option>Aço</option>
+          </select>
+          <input id="length" type="text" placeholder="Comprimento" />
         </div>
+        <div class="icon" id="icon-box">
+          <img src="" alt="Ícone de Cotovelo de Tubo" id="icon-image" />
+        </div>
+        <div class="diagram">
+          <img src="pipe-diagram.png" alt="Diagrama de Tubo" />
+        </div>
+      </div>
+
+      <!-- Grid Section -->
+      <div class="grid" id="grid">
+        <!-- 15x10 grid cells will be generated dynamically -->
+      </div>
+
+      <div class="bottom-section">
+        <!-- Other sections can be added here -->
+      </div>
     </div>
-</body>
+
+    <script>
+      // Initialize the 15x10 grid as a 2D matrix
+      const rows = 10;
+      const cols = 15;
+
+      let matrix = Array.from({ length: rows }, () =>
+        Array(cols).fill({ type: 0, isStart: false, isEnd: false, rotation: 0 })
+      ); // Enhanced matrix with metadata for each cell
+
+      // Get the grid container
+      const gridContainer = document.getElementById("grid");
+
+      // Track the selected cell position
+      let selectedRow = -1;
+      let selectedCol = -1;
+
+      // Function to create the grid dynamically
+      function createGrid() {
+        for (let i = 0; i < rows; i++) {
+          for (let j = 0; j < cols; j++) {
+            const cell = document.createElement("div");
+            cell.dataset.row = i;
+            cell.dataset.col = j;
+
+            // Add event listener to select cell
+            cell.addEventListener("click", () => selectCell(i, j));
+
+            gridContainer.appendChild(cell);
+          }
+        }
+
+        // Set the initial selected cell (if any)
+        updateSelectedCell();
+      }
+
+      // Function to update the visual appearance of the selected cell
+      function updateSelectedCell() {
+        const cells = gridContainer.querySelectorAll("div");
+        cells.forEach((cell) => {
+          const row = cell.dataset.row;
+          const col = cell.dataset.col;
+
+          // Only apply the selected class to the specifically selected cell
+          if (row == selectedRow && col == selectedCol) {
+            cell.classList.add("selected");
+          } else {
+            cell.classList.remove("selected");
+          }
+        });
+      }
+
+      // Function to select a cell (only one can be selected at a time)
+      function selectCell(row, col) {
+        if (selectedRow === row && selectedCol === col) {
+          selectedRow = -1;
+          selectedCol = -1;
+        } else {
+          selectedRow = row;
+          selectedCol = col;
+        }
+        updateSelectedCell();
+      }
+
+      // Arrow button event listeners to move the selected cell
+      document.getElementById("up").addEventListener("click", () => {
+        if (selectedRow > 0) selectCell(selectedRow - 1, selectedCol);
+      });
+
+      document.getElementById("down").addEventListener("click", () => {
+        if (selectedRow < rows - 1) selectCell(selectedRow + 1, selectedCol);
+      });
+
+      document.getElementById("left").addEventListener("click", () => {
+        if (selectedCol > 0) selectCell(selectedRow, selectedCol - 1);
+      });
+
+      document.getElementById("right").addEventListener("click", () => {
+        if (selectedCol < cols - 1) selectCell(selectedRow, selectedCol + 1);
+      });
+
+      // Rotate 90º button functionality
+      document.getElementById("rotate").addEventListener("click", () => {
+        if (selectedRow !== -1 && selectedCol !== -1) {
+          const cell = gridContainer.querySelector(
+            `div[data-row="${selectedRow}"][data-col="${selectedCol}"]`
+          );
+
+          // Find the image inside the selected cell
+          const image = cell.querySelector("img");
+          if (image) {
+            // Increment the rotation angle in the matrix
+            const currentRotation =
+              matrix[selectedRow][selectedCol].rotation || 0;
+            const newRotation = (currentRotation + 90) % 360; // Rotate in 90-degree increments
+            matrix[selectedRow][selectedCol].rotation = newRotation;
+
+            // Apply the rotation to the image using CSS
+            image.style.transform = `rotate(${newRotation}deg)`;
+            image.style.transition = "transform 0.3s ease"; // Smooth rotation
+          }
+        }
+      });
+
+      // Define Start button functionality
+      let startCell = null;
+
+      document.getElementById("defineStart").addEventListener("click", () => {
+        if (selectedRow !== -1 && selectedCol !== -1) {
+          const cell = gridContainer.querySelector(
+            `div[data-row="${selectedRow}"][data-col="${selectedCol}"]`
+          );
+
+          // If a start cell already exists, reset it
+          if (startCell) {
+            startCell.classList.remove("start");
+            matrix[startCell.dataset.row][
+              startCell.dataset.col
+            ].isStart = false;
+          }
+
+          // Set the new start cell
+          startCell = cell;
+          cell.classList.toggle("start");
+          matrix[selectedRow][selectedCol].isStart =
+            !matrix[selectedRow][selectedCol].isStart;
+        }
+      });
+
+      // Define End button functionality
+      let endCell = null;
+
+      document.getElementById("defineEnd").addEventListener("click", () => {
+        if (selectedRow !== -1 && selectedCol !== -1) {
+          const cell = gridContainer.querySelector(
+            `div[data-row="${selectedRow}"][data-col="${selectedCol}"]`
+          );
+
+          // If an end cell already exists, reset it
+          if (endCell) {
+            endCell.classList.remove("end");
+            matrix[endCell.dataset.row][endCell.dataset.col].isEnd = false;
+          }
+
+          // Set the new end cell
+          endCell = cell;
+          cell.classList.toggle("end");
+          matrix[selectedRow][selectedCol].isEnd =
+            !matrix[selectedRow][selectedCol].isEnd;
+        }
+      });
+
+      // Modify the functionality of the + button to add both images
+      document.getElementById("add").addEventListener("click", () => {
+        const selectedType = document.getElementById("type").value; // First dropdown value
+        const selectedMaterial = document.getElementById("material").value; // Second dropdown value
+        const comprimentoInput = document.getElementById("length");
+        const comprimentoValue = comprimentoInput.value;
+        const cell = gridContainer.querySelector(
+          `div[data-row="${selectedRow}"][data-col="${selectedCol}"]`
+        );
+
+        // Remove any existing images from the cell
+        cell.innerHTML = ""; // Clear previous content
+
+        // Add the first image based on the 'type' dropdown
+        const firstImage = document.createElement("img");
+        firstImage.classList.add("grid-image"); // Add the class for styling
+        switch (selectedType) {
+          case "Junção 90º":
+            firstImage.src = "pipes/corner-NE.png"; // Image for 90º Elbow
+            firstImage.alt = "Junção 90º";
+            break;
+          case "Junção T":
+            firstImage.src = "pipes/t-turn.png"; // Image for T-junction
+            firstImage.alt = "Junção T";
+            break;
+          case "Valvula Aberta":
+            firstImage.src = "pipes/open-valve.png"; // Image for open valve
+            firstImage.alt = "Valvula Aberta";
+            break;
+          case "Valvula 1/2":
+            firstImage.src = "pipes/half-valve.png"; // Image for half valve
+            firstImage.alt = "Valvula 1/2";
+            break;
+          case "Valvula 1/4":
+            firstImage.src = "pipes/quarter-valve.png"; // Image for quarter valve
+            firstImage.alt = "Valvula 1/4";
+            break;
+          case "Reto Horizontal":
+            firstImage.src = "pipes/straight.png"; // Image for straight horizontal pipe
+            firstImage.alt = "Reto Horizontal";
+            break;
+          case "Reto Vertical":
+            firstImage.src = "pipes/straight-V.png"; // Image for straight vertical pipe
+            firstImage.alt = "Reto Vertical";
+            break;
+          default:
+            break;
+        }
+
+        // Position the first image in the center of the cell
+        firstImage.style.position = "absolute";
+        firstImage.style.top = "0";
+        firstImage.style.left = "0";
+        firstImage.style.width = "100%";
+        cell.appendChild(firstImage);
+
+        // Add the second image based on the 'material' dropdown
+        const secondImage = document.createElement("img");
+        secondImage.classList.add("second-image"); // Add the class for styling
+        switch (selectedMaterial) {
+          case "Cobre":
+            secondImage.src = "pipes/cu.png"; // Copper image
+            secondImage.alt = "Cobre";
+            break;
+          case "Ferro":
+            secondImage.src = "pipes/fe.png"; // Iron image
+            secondImage.alt = "Ferro";
+            break;
+          case "Aço":
+            secondImage.src = "pipes/fec.png"; // Steel image
+            secondImage.alt = "Aço";
+            break;
+          default:
+            break;
+        }
+
+        if (comprimentoValue) {
+          const lengthText = document.createElement("div");
+          lengthText.classList.add("length-text");
+          lengthText.textContent = comprimentoValue + "m";
+
+          // Position the text at the bottom left of the cell
+          cell.appendChild(lengthText);
+        }
+
+        // Position the second image above the first image (as a layer)
+        secondImage.style.position = "relative";
+        secondImage.style.top = "23px";
+        secondImage.style.left = "23px";
+        secondImage.style.width = "30%";
+        secondImage.style.height = "30%";
+        cell.appendChild(secondImage);
+      });
+
+      // Create the grid
+      createGrid();
+    </script>
+  </body>
 </html>
