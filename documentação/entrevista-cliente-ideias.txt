@@ -3,3 +3,26 @@ Primeira opção
 Os líquidos entram em contato? Ou é tipo um sistema de aquecedor de piscina?
 Posição de onde vem o líquido, cima, baixo, lado
 Se já existe um sistema de tubulação feita
+
+
+então, estamos na situação de que para calcular o LMTD, precisamos das temperaturas de saída naturalmente para o Calculo, só que não podemos calcular a Temperatura de Saída sem ter o LMTD.
+
+Qual seria a solução para isso?
+
+1. Perguntar as temperaturas de saída para o usuário?
+2. Perguntar uma temperatura de saída e obter a outra?
+
+Em qualquer situação, sempre parece faltar mais de uma incógnita e temos uma equação de 2 variaveis.
+
+Já temos:
+As duas temperaturas de entrada
+O calor especifico de ambos os fluidos
+A vazão de ambos os fluidos
+A area de contato
+O coeficiente de transferência de energia
+
+sendo:
+
+U. A. LMTD = Vazão . Cp . deltaT
+
+temas uma situação em que duas incógnitas exigem a temperatura de saída
