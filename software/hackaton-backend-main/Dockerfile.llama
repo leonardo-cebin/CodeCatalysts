@@ -1,0 +1,11 @@
+# Base na imagem do Ollama
+FROM ollama/ollama
+
+# Copie o script para o container
+COPY entrypoint.sh /entrypoint.sh
+
+# Torne o script executável
+RUN chmod +x /entrypoint.sh
+
+# Use o script como ponto de entrada
+CMD ["/entrypoint.sh"]

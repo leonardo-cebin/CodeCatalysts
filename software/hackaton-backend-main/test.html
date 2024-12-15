@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Socket.IO Test</title>
+  <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"></script>
+</head>
+<body>
+  <h1>Teste Socket.IO</h1>
+  <textarea id="log" rows="20" cols="80" readonly></textarea><br>
+  <input type="text" id="message" placeholder="Digite sua mensagem">
+  <button onclick="sendMessage()">Enviar</button>
+
+  <script>
+    const socket = io('http://localhost:3000/pump-selector');
+    const log = document.getElementById('log');
+    const messageInput = document.getElementById('message');
+
+    socket.on('connect', () => {
+      log.value += 'Conectado ao servidor WebSocket\n';
+    });
+
+    socket.on('response', (data) => {
+      log.value += `Resposta: ${data}\n`;
+    });
+
+    socket.on('end', (message) => {
+      log.value += `Finalizado: ${message}\n`;
+    });
+
+    socket.on('disconnect', () => {
+      log.value += 'Desconectado do servidor\n';
+    });
+
+    function sendMessage() {
+      const message = "Why is the sky blue?";
+      if (message) {
+        socket.emit('chat', message);
+        log.value += `Enviado: ${message}\n`;
+        messageInput.value = '';
+      }
+    }
+  </script>
+</body>
+</html>

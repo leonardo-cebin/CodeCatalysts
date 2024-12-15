@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      # - ./src:/app/src
+      - ./node_modules:/app/node_modules
+    environment:
+      - DATABASE_HOST=${DATABASE_HOST}
+      - DATABASE_PORT=${DATABASE_PORT}
+      - DATABASE_USER=${DATABASE_USER}
+      - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+      - DATABASE_NAME=${DATABASE_NAME}
+    # FIXME: Run based on NODE_ENV
+    # command: >
+    #   sh -c "npm run migration:run && npm run start:prod"
+    command: >
+      sh -c "npm run start:dev"
+    depends_on:
+      - db
+    links:
+      - db
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  db:
+    image: postgres:15
+    container_name: db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: ${DATABASE_USER}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      POSTGRES_DB: ${DATABASE_NAME}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./.docker/postgres:/docker-entrypoint-initdb.d # Scripts para initdb
+  
+  # ollama:
+  #   image: ollama/ollama
+  #   container_name: ollama
+  #   ports:
+  #     - "11434:11434"
+  #   volumes:
+  #     - ollama:/root/.ollama
+  #     - ./entrypoint.sh:/entrypoint.sh
+  #   restart: always
+  #   entrypoint: ["sh", "/entrypoint.sh"]
+
+volumes:
+  postgres_data:
+  # ollama:
