@@ -1,0 +1,71 @@
+.chat-button {
+  background-color: #5da4d4fd;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.chat-container {
+  width: 700px;
+  height: 600px;
+  max-height: 600px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+::ng-deep nb-chat .header {
+  background-color: #5da4d4fd !important;
+  color: white !important;
+}
+
+::ng-deep nb-chat-message[reply] .message {
+  background-color: #5da4d4fd !important;
+  color: white !important;
+}
+
+::ng-deep nb-chat-message:not([reply]) .message {
+  color: #333 !important;
+}
+
+::ng-deep nb-chat-form button {
+  background-color: #5da4d4fd !important;
+  color: white !important;
+  border: none !important;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: .6;
+}
+
+.loader {
+  width: 60px;
+  aspect-ratio: 4;
+  background: radial-gradient(circle closest-side,#000 90%,#0000) 0/calc(100%/3) 100% space;
+  clip-path: inset(0 100% 0 0);
+  animation: l1 1s steps(4) infinite;
+}
+@keyframes l1 {to{clip-path: inset(0 -34% 0 0)}}

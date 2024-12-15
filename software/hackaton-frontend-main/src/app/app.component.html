@@ -1,0 +1,46 @@
+<nb-layout>
+  <nb-layout-header fixed>
+    <div class="btn-container">
+      <button class="btn button" [class.btn-selected]="isCurrentRoute('pump-selector')" [routerLink]="['/pump-selector']">Bombas</button>
+      <button class="btn button" [class.btn-selected]="isCurrentRoute('heat-exchanger')" [routerLink]="['/heat-exchanger']">Calor</button>
+      <!-- <button class="btn button" [class.btn-selected]="isCurrentRoute('pressure-loss')" [routerLink]="['/pressure-loss']">Pressão</button> -->
+    </div>
+  </nb-layout-header>
+  <nb-layout-column>
+    <router-outlet></router-outlet>
+    <!-- <app-chat></app-chat> -->
+  </nb-layout-column>
+                                           <!--footer?
+  <nb-layout-footer fixed>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Sobre Nós</h4>
+        <p></p>
+      </div>
+      <div class="footer-section">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="/pump-selector">Seletor de Bombas</a></li>
+          <li><a href="/heat-exchanger">Trocador de Calor</a></li>
+          <li><a href="/pressure-loss">Perda de Pressão</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contato</h4> 
+        <p>Email: contatoexemplo.com</p>
+        <p>Telefone: (11) 1234-5678</p>
+      </div>
+      <div class="footer-section">
+        <h4>Siga-nos</h4>
+        <div class="social-icons">
+          <a href="#" target="_blank"></a>
+          <a href="#" target="_blank"></a>
+          <a href="#" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Sua Empresa. Todos os direitos reservados.</p>
+    </div>
+  </nb-layout-footer>
+</nb-layout>-->

@@ -1,0 +1,88 @@
+<nb-card>
+  <nb-card-body>
+    <form [formGroup]="form" (submit)="consult()">
+        <ng-template #labelOne>First step</ng-template>
+        <h4>Parâmetros de Altura</h4>
+        <p class="lorem">
+            
+        </p>
+        <section class="card-type">
+            <div class="tab-content active" id="parametros-basicos">
+            <div class="dashboard">
+                <div class="card">
+                    <div class="card__content">
+                        <i class="fas fa-arrows-alt-v"></i>
+                        <h3>Altura Geométrica</h3>
+                        <input type="number" id="perdaCargaSuccao" placeholder="m" step="0.1" min="0" nbInput formControlName="geometricHeight" required>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__content">
+                        <i class="fas fa-arrow-up"></i>
+                        <h3>Altura de Sucção</h3>
+                        <input type="number" id="perdaCargaSuccao" placeholder="m" step="0.1" min="0" nbInput formControlName="suctionHeight" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <h4>Parâmetros de Perda</h4>
+        <div class="tab-content active" id="parametros-basicos">
+            <div class="dashboard">
+                <div class="card">
+                    <div class="card__content">
+                        <i class="fas fa-compress-arrows-alt"></i>
+                        <h3>Perda de Carga na Sucção</h3>
+                        <input type="number" id="perdaCargaSuccao" placeholder="m" step="0.1" min="0" nbInput formControlName="suctionPressureLoss" required>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__content">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Perda de Carga na Bomba</h3>
+                        <input type="number" id="perdaCargaSuccao" placeholder="m" step="0.1" min="0" nbInput formControlName="pressureLossInThePump" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <h4>Parâmetros do Fluído</h4>
+        <div class="tab-content active" id="parametros-basicos">
+            <div class="dashboard">
+                <div class="card">
+                    <div class="card__content">
+                        <i class="fas fa-flask"></i>
+                        <h3>Fluido</h3>
+                        <nb-select placeholder="Selecione o fluido" formControlName="fluid">
+                            @for (coefficient of coefficients; track $index) {
+                                <nb-option [value]="coefficient.id">{{ coefficient.compound_name }}</nb-option>
+                            }
+                        </nb-select>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__content">
+                        <i class="fas fa-thermometer-half"></i>
+                        <h3>Temperatura Média do Fluído</h3>
+                        <input type="number" id="temperaturaFluido" placeholder="°C" step="0.1" nbInput formControlName="averageFluidTemperature" required>
+                        <div *ngIf="form.get('averageFluidTemperature')?.errors?.['customError']" style="margin-top: 10px; color: red;">
+                            {{ form.get('averageFluidTemperature')?.errors?.['customError'] }}
+                          </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__content">
+                        <i class="fas fa-tint"></i>
+                        <h3>Pressão do Fluído na Captação</h3>
+                        <input type="number" id="pressaoFluido" placeholder="Pa" step="0.1" min="0" nbInput formControlName="fluidPressureInCapture" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="button-next-prev">
+            <button nbButton [disabled]="form.invalid">Consultar</button>
+        </section>
+    </form>
+  </nb-card-body>
+</nb-card>

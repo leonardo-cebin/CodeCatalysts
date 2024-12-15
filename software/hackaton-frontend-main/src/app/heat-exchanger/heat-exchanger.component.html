@@ -1,0 +1,175 @@
+<nb-card>
+  <nb-card-body>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <ng-template #labelOne>First step</ng-template>
+      <div class="header">
+        <h4>Parametros de Temperatura de Fluidos</h4>
+        <nb-select class="" placeholder="Selecione a escala" formControlName="scale" style="width: 100%;">
+          <nb-option value="C">°C</nb-option>
+          <nb-option value="K">K</nb-option>
+          <nb-option value="F">°F</nb-option>
+        </nb-select>
+      </div>
+      <p class="lorem">
+      </p>
+      <section class="card-type">
+        <div class="tab-content active" id="parametros-basicos">
+          <div class="dashboard">
+              <div class="card">
+                  <div class="card__content">
+                    <img width="48" height="48" src="https://img.icons8.com/pulsar-line/48/temperature.png" alt="temperature"/>
+                      <h3>Temperatura Quente de Entrada Fluido 1</h3>
+                      <div class="container">
+                        <div style="flex: 1;">
+                          <nb-select class="" placeholder="Selecione o fluido" formControlName="T_hot_inFluid" style="width: 100%;">
+                            @for (coefficient of coefficients; track $index) {
+                                <nb-option [value]="coefficient.id">{{ coefficient.compound_name }}</nb-option>
+                            }
+                          </nb-select>
+                        </div>
+                        <div style="flex: 1;">
+                          <input type="number" placeholder="Temperatura" step="0.1" min="0" formControlName="T_hot_in" nbInput>
+                        </div>
+                      </div>                      
+                  </div>
+              </div>
+              <div class="card">
+                <div class="card__content">
+                  <img width="48" height="48" src="https://img.icons8.com/pulsar-line/48/temperature.png" alt="temperature"/>
+                  <h3>Temperatura Fria Entrada Fluido 2</h3>
+                  <div class="container">
+                    <div style="flex: 1;">
+                      <nb-select class="" placeholder="Selecione o fluido" formControlName="T_cold_inFluid" style="width: 100%;">
+                        @for (coefficient of coefficients; track $index) {
+                            <nb-option [value]="coefficient.id">{{ coefficient.compound_name }}</nb-option>
+                        }
+                      </nb-select>
+                    </div>
+                    <div style="flex: 1;">
+                      <input type="number" placeholder="Temperatura" step="0.1" min="0" formControlName="T_cold_in" nbInput>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__content">
+                  <img width="48" height="48" src="https://img.icons8.com/pulsar-line/48/temperature.png" alt="temperature"/>
+                  <h3>Temperatura Quente Saída Fluido 1</h3>
+                  <div class="container">
+                    <div style="flex: 1;">
+                      <input type="number" placeholder="Temperatura" step="0.1" min="0" formControlName="T_hot_out" style="width: 100%;" nbInput>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__content">
+                  <img width="48" height="48" src="https://img.icons8.com/pulsar-line/48/temperature.png" alt="temperature"/>
+                  <h3>Temperatura Fria Saída Fluido 2</h3>
+                  <div class="container">
+                    <div style="flex: 1;">
+                      <input type="number" placeholder="Temperatura" step="0.1" min="0" formControlName="T_cold_out" style="width: 100%;" nbInput>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="card">
+                  <div class="card__content">
+                      <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/piping.png" alt="piping"/>
+                      <h3>Vazão Fluido 1</h3>
+                      <input type="number" id="perdaCargaSuccao" placeholder="L/s" step="0.1" min="0" formControlName="firstFlow" nbInput>
+                  </div>
+              </div>
+              <div class="card">
+                <div class="card__content">
+                  <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/piping.png" alt="piping"/>
+                    <h3>Vazão Fluido 2</h3>
+                    <input type="number" id="perdaCargaSuccao" placeholder="L/s" step="0.1" min="0" formControlName="secondFlow" nbInput>
+                </div>
+            </div> -->
+            <div class="card">
+              <div class="card__content">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/information.png" alt="information"/>
+                  <h3> Coeficiente de Transferência de Calor (U)</h3>
+                  <input type="string" id="perdaCargaSuccao" placeholder="W/(m²·K)" formControlName="coeficient" nbInput>
+              </div>
+          </div>
+          </div>
+      </div>
+                                      <!--PART-2-->
+      <h4>Área De Contato</h4>
+      <div class="tab-content active" id="parametros-basicos">
+        <div class="dashboard">
+            <div class="card">
+                <div class="card__content">
+                  <img width="48" height="48" src="https://img.icons8.com/ink/48/radius.png" alt="radius"/>
+                    <h3>Raio do Tubo (centímetros)</h3>
+                    <input type="number" id="perdaCargaSuccao" placeholder="cm" step="0.1" min="0" formControlName="radius" nbInput>
+                </div>
+            </div>
+            <div class="card">
+              <div class="card__content">
+                <img width="48" height="48" src="https://img.icons8.com/ink/48/length.png" alt="length"/>
+                  <h3>Comprimento do Tubo (metros)</h3>
+                  <input type="number" id="perdaCargaSuccao" placeholder="m" step="0.1" min="0" nbInput formControlName="pipeLength">
+              </div>
+          </div>
+          <div class="card">
+            <div class="card__content">
+              <img width="48" height="48" src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/48/external-stack-overflow-is-a-question-and-answer-site-for-professional-logo-regular-tal-revivo.png" alt="external-stack-overflow-is-a-question-and-answer-site-for-professional-logo-regular-tal-revivo"/>
+                <h3>Quantidade de Tubos</h3>
+                <input type="number" id="perdaCargaSuccao" placeholder="" formControlName="pipeQtd" nbInput>
+            </div>
+        </div>
+        </div>
+
+        <h4>Sentido do Fluxo</h4>
+        <div class="tab-content active" id="parametros-basicos">
+          <div class="dashboard">
+            <nb-radio-group formControlName="flowType">
+              <nb-radio value="1">Oposto</nb-radio>
+              <nb-radio value="2">Paralelo</nb-radio>
+            </nb-radio-group>
+          </div>
+      </div>
+      <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
+        <button nbButton [disabled]="form.invalid">Consultar</button>
+      </div>
+    </div>
+    </section>
+    </form>
+  </nb-card-body>
+</nb-card>
+
+<div *ngIf="hasResult" class="graphs-container">
+  <nb-card style="width: 650px; height:500px;">
+    <nb-card-header>Vazão</nb-card-header>
+    <nb-card-body>
+      <div echarts [options]="flowOption" style="width: 600px;height:400px;"></div>
+    </nb-card-body>
+  </nb-card>
+
+  <div class="results-container">
+    <nb-card style="width: 280px; height:200px;">
+      <nb-card-header>Calor transferido</nb-card-header>
+      <nb-card-body class="info-container">
+        <span><b>Transferidos:</b> {{ result ? result.transferredHeat.toFixed(2) + ' J/s' : 'N/A' }}</span>
+      </nb-card-body>
+    </nb-card>
+
+    <nb-card style="width: 280px; height:200px;">
+      <nb-card-header>Vazões</nb-card-header>
+      <nb-card-body class="info-container">
+        <span><b>Vazão quente:</b> {{ result ? result.hotFlow.toFixed(2) + 'kg/s' : 'N/A' }}</span>
+        <span><b>Vazão fria:</b> {{ result ? result.coldFlow.toFixed(2) + 'kg/s' : 'N/A' }}</span>
+      </nb-card-body>
+    </nb-card>
+  </div>
+  
+  <nb-card style="width: 650px; height:500px;">
+    <nb-card-header>Temperatura</nb-card-header>
+    <nb-card-body>
+      <div echarts [options]="temperatureOption" style="width: 600px;height:400px;"></div>
+    </nb-card-body>
+  </nb-card>
+</div>

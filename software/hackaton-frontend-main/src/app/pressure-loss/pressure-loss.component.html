@@ -1,0 +1,45 @@
+<!-- app.component.html -->
+<div class="container">
+  <div class="top-section">
+    <div class="navigation">
+      <button (click)="moveUp()">▲</button>
+      <div>
+        <button (click)="moveLeft()">◀</button>
+        <button (click)="addElement()">+</button>
+        <button (click)="moveRight()">▶</button>
+      </div>
+      <button (click)="moveDown()">▼</button>
+      <button (click)="rotateElement()">↻</button>
+      <button (click)="defineStart()">Start</button>
+      <button (click)="defineEnd()">End</button>
+    </div>
+    <div class="controls">
+      <select [(ngModel)]="selectedType">
+        <option *ngFor="let type of types" [value]="type">{{ type }}</option>
+      </select>
+      <select [(ngModel)]="selectedMaterial">
+        <option *ngFor="let material of materials" [value]="material">{{ material }}</option>
+      </select>
+      <input [(ngModel)]="length" type="text" placeholder="Comprimento" />
+    </div>
+    <div class="icon">
+      <img alt="Ícone de Cotovelo de Tubo" />
+    </div>
+    <div class="diagram">
+      <img src="pipe-diagram.png" alt="Diagrama de Tubo" />
+    </div>
+  </div>
+
+  <div class="grid">
+    <div
+      *ngFor="let cell of grid; let rowIndex = index"
+      [class.selected]="isSelected(rowIndex, cell.colIndex)"
+      [class.start]="cell.isStart"
+      [class.end]="cell.isEnd"
+      (click)="selectCell(rowIndex, cell.colIndex)"
+    >
+      <img *ngIf="cell.image" [src]="cell.image" class="grid-image" />
+      <div *ngIf="cell.length" class="length-text">{{ cell.length }}m</div>
+    </div>
+  </div>
+</div>
